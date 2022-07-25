@@ -349,11 +349,9 @@ p {
         font-size: 12px;
         padding: 5px;
         text-align: justify;
-        line-height: 1.4;
+        line-height: 1.2;
         border: none;
         font-family: inherit;
-        padding: 10px;
-        line-height: 1.2;
         margin: 2px 0px 15px 0px;
     }
 
