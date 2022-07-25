@@ -169,7 +169,7 @@ h1 {
     margin: 0px 15px 0px 26px;
     height: 100%;
     background-color: none;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     color: #fff;
     font-size: 16px;
     text-align: justify;
@@ -217,7 +217,7 @@ h1 {
 p {
     font-family: inherit;
     background-color: rgb(23 25 27);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #fff;
     font-size: 18px;
     padding: 18px;
@@ -299,7 +299,7 @@ p {
         margin: 0px 15px 0px 26px;
         height: 100%;
         background-color: none;
-        letter-spacing: 1.5px;
+        letter-spacing: 1px;
         color: #fff;
         font-size: 16px;
         text-align: justify;
