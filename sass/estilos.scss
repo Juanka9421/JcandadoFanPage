@@ -177,9 +177,9 @@ padding: 0;
   }
 /*-----------Headernavbar--------*/
 header {
-    background: url(./imagenes/GreenDay4.jpg);
-    height: 170px;
-    border: black 5px solid;
+    background: url(../imagenes/GreenDay4.jpg);
+    height: 140px;
+    border: black 3px solid;
 
 }
 
@@ -398,7 +398,6 @@ p {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        text-align: center;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
@@ -481,14 +480,18 @@ p {
     .grid-item2,
     .grid-item3,
     .grid-item4 {
-        padding-left: 0px;
+        padding-left: 10px;
         padding-top: 10px;
+        text-align: center;
     }
 
     header {
         height: 120px;
 
     }
+    .navbar-dark .navbar-nav .nav-link.active{
+        color: #ddddddd6;
+      }
 
     #footer h3 {
         font-size: 12px;
@@ -504,6 +507,9 @@ p {
 }
 
 @media (min-width: 769px) and (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link.active{
+        color: #ddddddd6;
+      }
    
     .navbar .navbar-nav .nav-link:hover {
         background-color: #8f0204d4;
