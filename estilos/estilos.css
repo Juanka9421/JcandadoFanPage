@@ -26,10 +26,6 @@
   grid-gap: 0;
 }
 
-.grid-item2 {
-  padding-left: 24px;
-}
-
 .grid-item5 {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -218,6 +214,11 @@ a {
   color: #fff;
 }
 
+.navbar-dark .navbar-toggler {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
 .navbar .navbar-nav .nav-link:hover {
   background-color: rgba(143, 2, 4, 0.831372549);
 }
@@ -328,21 +329,17 @@ p {
 }
 
 .discografia img {
-  height: 400px;
-  width: 550px;
+  height: 300px;
+  max-width: 50rem;
   margin-left: 50px;
   margin-bottom: 20px;
-  border: solid rgb(21, 18, 18);
   border-radius: 1cm;
 }
 
 .spotify-container iframe {
-  padding: 200px;
-  margin: 0;
-  box-sizing: border-box;
-  width: 680px;
-  padding-left: 58px;
-  border-top-width: 10px;
+  padding: 100px;
+  max-width: 33rem;
+  padding-left: 38px;
   padding-top: 10px;
 }
 
@@ -410,8 +407,8 @@ p {
   .grid-item6 iframe {
     margin-left: 0px;
     position: relative;
-    width: 95%;
-    height: 258px;
+    width: 98%;
+    height: 19rem;
   }
   .grid-item7 {
     margin: 0;
@@ -424,8 +421,9 @@ p {
     text-align: justify;
     border: none;
     font-family: sans-serif;
+    font-size: 12px;
     padding: 10px;
-    line-height: 1.2;
+    line-height: 1;
     margin: 2px 0px 15px 0px;
   }
   .grid-item7 h3 {
@@ -436,12 +434,6 @@ p {
     padding: 10px;
   }
   .rid {
-    width: 100%;
-    text-align: justify;
-    background-color: rgb(23, 25, 27);
-    border: 1px solid #fff;
-  }
-  .discografia {
     width: 100%;
     text-align: justify;
     background-color: rgb(23, 25, 27);
@@ -471,15 +463,20 @@ p {
 .grid-item3,
 .grid-item4,
 .grid-item6 {
-    padding-left: 10px;
+    padding-bottom: 10px;
     padding-top: 10px;
     text-align: center;
   }
   header {
     height: 120px;
   }
+  ul li {
+    font-size: 1rem;
+    margin-top: 30px;
+  }
   .navbar-dark .navbar-nav .nav-link.active {
     color: rgba(221, 221, 221, 0.8392156863);
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
   #footer h3 {
     font-size: 12px;
@@ -492,10 +489,29 @@ p {
     flex-wrap: wrap;
     padding-right: 50px;
   }
+  .discografia {
+    display: flex;
+    align-items: row;
+    flex-wrap: wrap;
+    padding-right: 50px;
+  }
+  .discografia img {
+    max-height: 35rem;
+    max-width: 40rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1cm;
+  }
+  .spotify-container iframe {
+    max-width: 30rem;
+    padding-left: 38px;
+    padding-top: 10px;
+  }
 }
 @media (min-width: 769px) and (max-width: 991.98px) {
   .navbar-dark .navbar-nav .nav-link.active {
     color: rgba(221, 221, 221, 0.8392156863);
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
   .navbar .navbar-nav .nav-link:hover {
     background-color: rgba(143, 2, 4, 0.831372549);
