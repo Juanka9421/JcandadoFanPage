@@ -9,7 +9,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 400px 490px 370px 100px;
+    grid-template-rows: 200px 400px 490px 385px 100px;
 
 }
 
@@ -20,23 +20,9 @@
     grid-row-end: 2;
 }
 
-.grid-item2,
-.grid-item3,
-.grid-item4 {
-    padding-top: 35px;
-    padding-left: -10px;
-    grid-gap: 0;
-
-
-}
-
-
-
 .grid-item5 {
-
     grid-column-start: 1;
     grid-column-end: 4;
-
 }
 
 .grid-item6 {
@@ -50,7 +36,7 @@
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
-    margin-left: -240px;
+    margin-left: -223px;
     margin-top: -70px;
 }
 
@@ -60,11 +46,16 @@
     grid-row-start: 6;
     grid-row-end: 7;
 }
-
+.grid-container img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
 .grid-container img {
     width: 95%;
     height: 100%;
+    margin-left: 10px;
     border: 1px solid #fff;
+   
 }
 
 /*--------Tour section------------------*/
@@ -114,7 +105,8 @@
 display: grid; 
 grid-template-columns: 1fr 1fr 1fr; 
 gap: 0; 
-background:radial-gradient(circle, rgba(121, 9, 32, 1) 33%, rgba(43, 111, 125, 1) 100%);
+background: rgb(29,38,45);
+background: linear-gradient(90deg, rgba(29,38,45,1) 6%, rgba(51,96,135,1) 62%, rgba(62,38,49,1) 100%);
 padding: 0;
 }
 
@@ -171,25 +163,24 @@ padding: 0;
   gap: 10px;
   padding: 5px 15px 5px 10px;
   grid-auto-flow: dense;
-  background:radial-gradient(circle, rgba(121, 9, 32, 1) 33%, rgba(43, 111, 125, 1) 100%);
+  background: rgb(29,38,45);
+  background: linear-gradient(90deg, rgba(29,38,45,1) 6%, rgba(51,96,135,1) 62%, rgba(62,38,49,1) 100%);
   }
 /*-----------Headernavbar--------*/
 header {
     background: url(../imagenes/GreenDay4.jpg);
     height: 140px;
     border: black 3px solid;
-
 }
 
 ul li {
     font-size: 1.3rem;
     list-style-type: none;
     margin-top: 40px;
-
 }
 
 .fondonav {
-    background-color: none;
+   background-color: none;
 }
 
 .collapse.show {
@@ -233,8 +224,8 @@ a {
 }
 
 body {
-
-    background: radial-gradient(circle, rgba(121, 9, 32, 1) 33%, rgba(43, 111, 125, 1) 100%);
+    background: rgb(29,38,45);
+    background: linear-gradient(90deg, rgba(29,38,45,1) 6%, rgba(51,96,135,1) 62%, rgba(62,38,49,1) 100%);
 }
 
 h1 {
@@ -264,17 +255,16 @@ span{
     padding: 8px;
     margin-top: 31px;
     border: 1px solid;
-
 }
 
 .grid-item7 h3 {
-    background-color: #343087;
-    color: #fff;
-    font-style: normal;
+    background: linear-gradient(55deg, rgb(32 40 47) -6%, rgb(31 110 178) 38%, rgb(22 21 27 / 52%) 94%);
+    color: white;
     text-align: center;
     margin-left: 30px;
-    font-size: 15px;
-    padding: 11px 35px;
+    margin-bottom: -1.2em;
+    font-size: 16px;
+    padding: 10px 35px;
     width: 50%;
     border-radius: 10px;
 }
@@ -309,7 +299,6 @@ span{
     height: 248px;
     margin: 15px 13px 6px 14px;
     border-radius: 6px;
-  
 }
 
 .parrafito,
@@ -323,9 +312,8 @@ p {
     text-align: justify;
     line-height: 1.9;
     margin: 20px 20px 20px 20px;
-
 }
-
+/*------Discografia Section------*/
 .discografia {
     display: flex;
     align-items: row;
@@ -353,18 +341,20 @@ p {
     margin-left: 10px;
     position: relative;
     width: 75%;
-    height: 425px;
+    height: 445px;
 }
 
 #footer {
     background-color: #000000;
     color: #ffff;
-    padding: 20px;
+    padding: 5px 0px 10px 15px;
+   
 
 }
 
 #footer h3 {
     font-size: 1.25rem;
+    padding-top:.8em;
 }
 
 
@@ -376,9 +366,35 @@ p {
 }
 
 .text {
-    height: 460px;
-    margin: 30px 30px 15px 18px;
+    
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+   
+   
 }
+.text1{
+    width: 40%;
+   
+    border-radius: 10%;
+    border: 5px solid #f8f9fa;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding:15px 7px 7px 25px;
+    color: #fff;
+    background-color: rgb(2 2 2 / 76%);
+    height: -webkit-fill-available;
+}
+.text p{
+    font-size: 1.2rem;
+    background-color: #dee2e600;
+    letter-spacing: 0;
+    color:white;
+
+}
+
 @media (min-width: 300px) and (max-width:599px){
     .tour-container3 {
         
@@ -451,9 +467,10 @@ p {
     }
 
     .grid-item7 h3 {
-        font-size: 10px;
-        margin-left: 19px;
-        width: 50%;
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 8px;
+        width: 55%;
         border-radius: 10%;
         padding: 10px;
         text-align: center;
@@ -542,13 +559,77 @@ p {
     }
     
     .spotify-container iframe {
-      
         max-width: 30rem;
         padding-left: 38px;
         padding-top: 10px;
     }
     
+.text{
+    align-items: center;
 }
+
+.text1 {
+   margin-top: 3rem;
+   width: 75%;
+   height: 80%;
+}
+    
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+.grid-item5{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.parrafito, p{
+    letter-spacing: 0px;
+    color: rgba(255, 255, 255, 0.8196078431);
+    font-size: 1rem;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.9;
+    margin: 18px 0px 20px 0px;
+}
+.grid-item6 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-gap:1rem;
+}
+.grid-item6 iframe {
+    margin: 10px 10px 0px 11px;
+    position: relative;
+    width: 96%;
+    height: 27.3rem;
+}
+.grid-item7 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    margin: 10px;
+    padding:1rem;
+}
+.grid-item7 h3 {
+    background: linear-gradient(55deg, #0d0e0e 11%, rgb(31, 110, 178) 38%, rgba(22, 21, 27, 0.52) 84%);
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom:-1.2em;
+    font-size: 16px;
+    padding: 10px 35px;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.grid-item8 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 9; 
+}
+
+}
+
 
 @media (min-width: 769px) and (max-width: 991.98px) {
     .navbar-dark .navbar-nav .nav-link.active{
@@ -569,6 +650,16 @@ p {
     padding-right: 0;
     padding-left: 0;
 }
+}
+@media (min-width: 900px)and (max-width: 1300px){
+    .parrafito{
+       font-size: 1.1rem;
+    }
+    .grid-item6 iframe {
+        margin: -1px 10px 0px 11px;
+        width: 98%;
+        height: 31.3rem;
+    }
 }  
 
 
