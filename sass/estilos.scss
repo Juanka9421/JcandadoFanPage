@@ -213,6 +213,13 @@ a {
     color: #f8f9fa;
     border-color: #f8f9fa;
 }
+.fixed-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
 
 .navbar .navbar-nav .nav-link:hover {
     background-color: #8f0204d4;
@@ -401,7 +408,13 @@ span{
     flex-direction: column;
     width: 100%;
 }
-
+.grid-contacto2{
+    display: flex;
+    height: 100%;
+}
+.formulario-contacto{
+   padding: 3px;
+}
 .text {
     
     display: flex;
@@ -465,7 +478,9 @@ span{
  
 
 @media (max-width:768px) {
-
+    .carousel {
+        margin: 5px 0 0 5px;
+    }
     .grid-container {
         display: flex;
         flex-direction: column;
