@@ -290,27 +290,66 @@ span {
   transition: transform scale 0.3s;
 }
 
-.bio-container {
+.carousel {
+  margin: 15px;
+}
+
+.carousel img {
   width: 100%;
-  text-align: justify;
-  background-color: rgb(23, 25, 27);
-  color: rgba(255, 255, 255, 0.8196078431);
+  height: 100%;
+  border: 1px solid rgb(32, 29, 29);
 }
 
-.bioimage {
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  list-style: none;
 }
 
-.bioimage img {
-  max-width: 350px;
-  height: 248px;
-  margin: 15px 13px 6px 14px;
-  border-radius: 6px;
+.carousel-indicators .active {
+  background-color: rgba(61, 66, 71, 0.8);
 }
 
-.parrafito,
-p {
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button;
+  margin: 5px;
+  width: 3em;
+}
+
+.carousel-indicators {
+  bottom: -11px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5%;
+  color: #fff;
+  background: 0 0;
+  text-align: center;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+
+.parrafito, p {
   font-family: Arial, sans-serif;
   background-color: rgb(23, 25, 27);
   letter-spacing: 2px;
@@ -541,6 +580,9 @@ p {
     margin-top: 3rem;
     width: 75%;
     height: 80%;
+  }
+  .text p {
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 769px) and (max-width: 1300px) {
