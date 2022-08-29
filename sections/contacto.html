@@ -15,16 +15,18 @@
 
 <body>
   <div class="container-contacto">
-    <div class="grid-item1">
+    <div class="grid-contacto1">
       <header>
         <nav class="navbar navbar-expand-lg navbar-dark fondonav">
           <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navbar">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-               
+
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
                 </li>
@@ -43,58 +45,89 @@
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="./tour2022.html">TOUR</a>
                 </li>
-                  
+
                 </li>
-                
+
               </ul>
-             
+
             </div>
           </div>
         </nav>
       </header>
     </div>
-      
-    <div class = "grid-contacto2">
-    <section class="text">
-      <article class="text1">
-        <form class="formulario-contacto">
-          <p>Para recibir noticias sobre la banda registrate aqui:</p>
-          <input type="text" placeholder="Nombre"><br>
-          <input type="text" placeholder="Apellido"><br>
-          <input type="number" placeholder="Edad"><br>
-          <label for="email">Ingresa tu email: <br>
-            <input type="email" placeholder="aaa@gmail.com" name="email"><br>
-          </label>
+
+    <div class="content">
+
+      <h1 class="logo">Green Day Fan Page <span>Argentina</span></h1>
+
+      <div class="contact-wrapper animated bounceInUp">
+        <div class="contact-form">
+          <h3>Si quieres recibir noticias sobre la banda registrate aqui:</h3>
+          <form action="">
+            <p>
+              <label>Nombre</label>
+              <input type="text" name="name">
+            </p>
+            <p>
+              <label>Apellido</label>
+              <input type="text" name="Surname">
+            </p>
+            <p>
+              <label>Email</label>
+              <input type="email" name="email">
+            </p>
+            <p>
+              <label>Telefono</label>
+              <input type="tel" name="phone">
+            </p>
+            <p class="block">
+              <label>Pais</label> 
+              <select name="Pais" id="letra">
+                <option value="Arg">Argentina</option>
+                <option value="Chl">Chile</option>
+                <option value="Bra">Brasil</option>
+                <option value="Ury">Uruguay</option>
+                <option value="Bol">Bolivia</option>
+                <option value="Col">Colombia</option>
+                <option value="Pry">Paraguay</option>
+              </select>
+              </p>
+            <p class="block">
+              <label>¿Quieres ingresar a nuestro grupo de telegram?</label> 
+              <select name="option" id="letra">
+                <option value="Yes">Si</option>
+                <option value="No">No</option>
+              </select>
+            </p> 
+           
+            <p class="block">
+              <label>Comentarios</label>
+              <textarea name="message" rows="3"></textarea>
+            </p>
+            
           
-          <div>Pais
-          <select name="letra" id="letra">
-            <option value="Ar">Argentina</option>
-            <option value="Ch">Chile</option>
-            <option value="Br">Brasil</option>
-          </select>
-          </div>
-          
-          <div>¿Quieres ingresar a nuestro grupo de telegram?
-            <input type="checkbox" name="aceptar" value="1">Si
-            <input type="checkbox" name="rechazar"  value="2">No
-          </div>
-          <div>
-            <label for="Observaciones"> Comentarios:<br>
-              <textarea placeholder="Observaciones"></textarea>
-            </label> <br>
-          </div>
-          <input type="submit" value="Enviar">
-          <input type="reset" value="Cancelar">
-        </form>
-      </article>
-    </section>
+            <p class="block">
+              <button input type="submit" value="Enviar">
+                Enviar
+              </button>
+            </p>
+            <p class="block">
+              <button input type="reset" value="Cancelar">
+                Borrar
+              </button>
+            </p>
+          </form>
+        </div>
+        
+      </div>
+
     </div>
-    <div class = "grid-contacto3">
-    <footer id="footer">
-      <h3>®Desarrollado por Juan Candado 2022</h3>
-      <h3><a href="mailto:juankalamakina@gmail.com">Contactame</a></h3>
-    </footer>
-  </div>
+    <div class="grid-contacto3">
+      <footer id="footer">
+        <h3>®Desarrollado por Juan Candado 2022</h3>
+        <h3><a href="mailto:juankalamakina@gmail.com">Contactame</a></h3>
+      </footer>
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
