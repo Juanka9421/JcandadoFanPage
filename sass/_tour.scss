@@ -1,0 +1,57 @@
+/*--------Tour--------------*/
+.container-tour {
+    display: grid; 
+    grid-template-columns:  1fr 1fr 1fr 1fr; 
+    gap: 0; 
+    background:radial-gradient(circle, rgba(121, 9, 32, 1) 33%, rgba(43, 111, 125, 1) 100%);
+    padding: 0;
+    }
+    .container-tour1 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+    .container-tour2 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      
+      }
+      .tour-container3 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      
+      }
+      .tour-container4 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+      .tour-container3{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(0.5 fr, 0.5 fr));
+        grid-auto-rows: minmax(450px, auto);
+        gap: 10px;
+        padding: 5px 20px 5px 20px;
+        grid-auto-flow: dense;
+      }
+     .Buy p{
+        text-align: center;
+        margin-left: 25px;
+        margin-right: 25px;
+     }
+     @media (min-width: 300px) and (max-width:599px){
+      .tour-container3 { 
+         padding: 5px 10px 5px 10px;    
+      }
+    }
+    @media (min-width: 300px) and (max-width:1900px){
+      .container, .container-tour{
+        max-width:100%;
+      }
+    }

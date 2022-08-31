@@ -1,0 +1,62 @@
+
+/*--------Biografia------------*/
+
+.carousel {
+    margin: 15px;
+}
+.carousel img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(32, 29, 29);
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+}
+    .carousel-indicators .active {
+        background-color: #3d4247cc;
+    }
+    .carousel-indicators .active {
+        opacity: 1;
+    }
+    .carousel-indicators {
+        bottom: -11px; 
+    }
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    color: #fff;
+    background: 0 0;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+.biografia{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.biografia p{
+    margin:0;
+    padding: 10px 20px 0px 20px;
+}
+@media (max-width:768px) {
+    .carousel {
+        margin: 15px 0 0 0;
+    }
+}

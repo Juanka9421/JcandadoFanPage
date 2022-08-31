@@ -1,0 +1,223 @@
+/*-----------Index-----------*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 400px 490px 385px 100px;
+}
+.grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.grid-item5 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.grid-item6 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.grid-item7 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-left: -223px;
+    margin-top: -70px;
+}
+.grid-item8 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.grid-container img {
+    width: 95%;
+    height: 100%;
+    margin-left: 10px;
+    border: 1px solid #fff;  
+}
+.grid-container img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.grid-item6 iframe {
+    margin-left: 10px;
+    position: relative;
+    width: 75%;
+    height: 445px;
+}
+.grid-item7 p {
+    margin: 0px 15px 0px 26px;
+    height: 100%;
+    background-color: none;
+    letter-spacing: 1.2px;
+    color: #ffffffd1;
+    font-size: 15px;
+    text-align: justify;
+    padding: 8px;
+    margin-top: 31px;
+    border: 1px solid;
+}
+.grid-item7 h3 {
+    background: linear-gradient(55deg, rgb(32 40 47) -6%, rgb(31 110 178) 38%, rgb(22 21 27 / 52%) 94%);
+    color: white;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: -1.2em;
+    font-size: 16px;
+    padding: 10px 35px;
+    width: 50%;
+    border-radius: 10px;
+}
+.rid {
+    width: 100%;
+    text-align: justify;
+}
+.rid img {
+    float: left;
+    max-width: 210px;
+    height: 200px;
+    margin: 15px 13px 6px 41px;
+    border-radius: 6px;
+    transition: transform scale 0.3s ;
+}
+ 
+@media (max-width:768px) {
+    
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .grid-container img {
+        width: 90%;
+    }
+    .grid-item6 iframe {
+        margin-left: 0px;
+        position: relative;
+        width: 98%;
+        height: 19rem;
+    }
+    .grid-item7 {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .grid-item7 p,
+    .grid-item7 h3 {
+        color: #ffffffd1;
+        padding: 5px;
+        text-align: justify;
+        border: none;
+        font-family: sans-serif;
+        font-size: 12px;
+        padding: 11px;
+        line-height: 1.3;
+        letter-spacing:0;
+        margin: 2px 0 15px 0;
+    }
+    .grid-item7 h3 {
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 8px;
+        width: 55%;
+        border-radius: 10%;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+    .rid {
+        width: 100%;
+        text-align: justify;
+        background-color: rgb(23 25 27);
+        border: 1px solid #fff;
+    }
+
+    .rid img {
+        float: right;
+        max-width: 12rem;
+        height: 11rem;
+        margin: 13px 5px 3px 5px;
+    }
+    .parrafito,
+    p {
+        background-color: rgb(23 25 27);
+        color: #ffffffd1;
+        font-size: 13px;
+        padding: 5px;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 11px;
+        letter-spacing: 0;
+        line-height: 1.4;
+        margin: 12px 0px 15px 0px;
+    }
+    .grid-item2,
+    .grid-item3,
+    .grid-item4,
+    .grid-item6 {
+       padding-bottom:10px;
+        padding-top: 10px;
+        text-align: center;
+    }  
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+    .grid-item5{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .parrafito, p{
+        letter-spacing: 0px;
+        font-size: 1rem;
+        padding: 19px;
+        line-height: 1.9;
+        margin: 18px 0px 20px 0px;
+    }
+    .grid-item6 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-gap:1rem;
+    }
+    .grid-item6 iframe {
+        margin: 10px 10px 0px 11px;
+        position: relative;
+        width: 96%;
+        height: 27.3rem;
+    }
+    .grid-item7 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        margin: 10px;
+        padding:1rem;
+    }
+    .grid-item8 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 8;
+        grid-row-end: 9; 
+    }
+    .grid-item7 h3 {
+        background: linear-gradient(55deg, #0d0e0e 11%, rgb(31, 110, 178) 38%, rgba(22, 21, 27, 0.52) 84%);
+        color: white;
+        text-align: center;
+        margin-left: 20px;
+        margin-bottom:-1.2em;
+        font-size: 16px;
+        padding: 10px 35px;
+        width: 40%;
+        border-radius: 10px;
+    }
+
+    }
+ @media (max-width: 991.98px){
+    .grid-item6 iframe {
+        margin: -1px 10px 0px 11px;
+        width: 98%;
+        height: 31.3rem;
+      }
+    }
+    
