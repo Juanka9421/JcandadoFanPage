@@ -496,7 +496,7 @@ ul li {
     margin-left: 0px;
     position: relative;
     width: 98%;
-    height: 19rem;
+    height: 20rem;
   }
   .grid-item7 {
     margin: 0;
@@ -577,10 +577,10 @@ p {
     grid-gap: 1rem;
   }
   .grid-item6 iframe {
-    margin: 10px 10px 0px 11px;
+    margin: 10px 10px 0px 10px;
     position: relative;
     width: 96%;
-    height: 27.3rem;
+    height: 29.3rem;
   }
   .grid-item7 {
     grid-column-start: 1;
@@ -606,13 +606,6 @@ p {
     padding: 10px 35px;
     width: 40%;
     border-radius: 10px;
-  }
-}
-@media (max-width: 991.98px) {
-  .grid-item6 iframe {
-    margin: -1px 10px 0px 11px;
-    width: 98%;
-    height: 31.3rem;
   }
 }
 /*--------Tour--------------*/
