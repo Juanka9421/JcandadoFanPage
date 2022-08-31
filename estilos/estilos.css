@@ -475,7 +475,7 @@ ul li {
 
 .rid img {
   float: left;
-  max-width: 210px;
+  max-width: 200px;
   height: 200px;
   margin: 15px 13px 6px 41px;
   border-radius: 6px;
@@ -534,7 +534,7 @@ ul li {
   .rid img {
     float: right;
     max-width: 12rem;
-    height: 11rem;
+    height: 12rem;
     margin: 13px 5px 3px 5px;
   }
   .parrafito,
