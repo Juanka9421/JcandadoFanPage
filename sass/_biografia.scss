@@ -1,52 +1,63 @@
 
 /*--------Biografia------------*/
 
-.carousel {
-    margin: 15px;
-}
-.carousel img {
-    width: 100%;
-    height: 100%;
-    border: 1px solid rgb(32, 29, 29);
-}
-.carousel-indicators {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin-right: 15%;
-    margin-bottom: 1rem;
-    margin-left: 15%;
-    list-style: none;
-}
-    .carousel-indicators .active {
-        background-color: #3d4247cc;
+
+#carouselExampleDark {
+    margin: 15px 25px 15px 25px;
+        h5{
+        background: linear-gradient(55deg, #0d0e0e 18%, rgb(33 110 176) 36%, rgba(22, 21, 27, 0.52) 92%);
+        width: 40%;
+        right:0;
+        text-align: center;
+        font-size:1.7rem;
+       margin-left: 1rem;
     }
-    .carousel-indicators .active {
-        opacity: 1;
+     
+    p{
+        text-align: center;
+        padding: 1px;
+        bottom:1rem;
+        margin: 0 auto;
+        letter-spacing: 0px;
+        font-size: 1.4rem;
+        color: white;
+        width: 40%;
+        background: linear-gradient(55deg, #0d0e0e 18%, rgb(33 110 176) 36%, rgba(22, 21, 27, 0.52) 92%);
     }
-    .carousel-indicators {
-        bottom: -11px; 
+    .carousel-control-next, .carousel-control-prev {
+        background: 0 0;
+        border: none;
     }
-.carousel-control-next, .carousel-control-prev {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 5%;
-    color: #fff;
-    background: 0 0;
-    text-align: center;
-    opacity: .5;
-    transition: opacity .15s ease;
+    .carousel-control-prev-icon,
+        .carousel-control-next-icon{
+       height: 4rem !important;
+       width: 3rem !important;
+       
+    }
+    .carousel-caption{
+        position: absolute;
+        right: 21%;
+        bottom: 20px;
+        left: -2%;
+        z-index: 1;
+        /* padding-top: 29px; */
+        padding-bottom: 10px;
+        color: #ffffffe3;
+        text-align: -webkit-left;
+    }
 }
+    .carousel-indicators button {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width:60px;
+    height: 7px;
+    margin-right: 9px;
+    margin-left: 4px;
+    background-color: rgb(147 102 95 / 65%);
+    border: none;
+} 
+
 .biografia{
     margin-top:10px;
     margin-bottom:20px;
@@ -55,8 +66,25 @@
     margin:0;
     padding: 10px 20px 0px 20px;
 }
-@media (max-width:768px) {
-    .carousel {
+@media (max-width:800px) {
+    #carouselExampleDark {
         margin: 15px 0 0 0;
     }
+    .carousel-control-next, .carousel-control-prev {
+        border: solid;
+    }
+    .carousel-indicators button {
+        width:40px;  
+    }
+}
+@media (min-width: 769px) and (max-width:1200px){
+
+
+    #carouselExampleDark p {
+        font-size: 1rem;
+    }
+    #carouselExampleDark h5{
+        font-size: 1.3rem;
+    }
+
 }
