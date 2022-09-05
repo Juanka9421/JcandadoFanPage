@@ -2,8 +2,8 @@
 .container-tour {
     display: grid; 
     grid-template-columns:  1fr 1fr 1fr 1fr; 
-    gap: 0; 
-    background:radial-gradient(circle, rgba(121, 9, 32, 1) 33%, rgba(43, 111, 125, 1) 100%);
+    gap: 10px; 
+    background: radial-gradient(circle, rgb(121, 9, 32) 33%, rgb(43, 111, 125) 100%);
     padding: 0;
     }
     .container-tour1 {
@@ -37,14 +37,58 @@
         grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
         grid-auto-rows: minmax(450px, auto);
         gap: 10px;
-        padding: 5px 20px 5px 20px;
+        padding: 5px 10px 5px 10px;
         grid-auto-flow: dense;
+        overflow: hidden;
+      }
+      .Buy{
+        display:flex;
+        background-color: rgb(5 5 5 / 83%);
+       
+        margin: 15px 25px 10px 25px;
+      }
+      .buy-bb{
+        padding: 6px 10px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+      .buy-bb button{
+        border: 2px solid rgba(0, 0, 0, 1);
+        background: rgba(255, 255, 255, 1);
+        border-radius: 5px;
+        display: block;
+        font-size: 1rem;
+        margin: 4px 0 4px 9px;
+        overflow: hidden;
+        padding: 6px 3px;
+        text-align: center;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        min-width: 120px;
+      }
+      .buy-bb button:hover {
+        background: #d63031;
+       color: #fff;
+       transition: background-color 0.5s ease-out;
+       outline: 0;
       }
      .Buy p{
-        text-align: center;
-        margin-left: 25px;
-        margin-right: 25px;
-     }
+      width:85%;
+      background-color:initial;
+    }
+      @media (max-width:768px) {
+        .buy-bb button{
+       font-size: 13px;
+      }
+      }
+     
      @media (min-width: 300px) and (max-width:599px){
       .tour-container3 { 
          padding: 5px 10px 5px 10px;    
