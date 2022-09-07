@@ -84,6 +84,9 @@
       background-color:initial;
     }
       @media (max-width:768px) {
+        .Buy{
+          margin: 15px 15px 0px 15px;
+        }
         .buy-bb button{
        font-size: 13px;
       }

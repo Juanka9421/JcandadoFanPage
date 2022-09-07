@@ -1,16 +1,16 @@
 /*------Discografia------*/
 
 .album1{
-    margin: 1em 0 0.4em 0;
+    margin: 1.3em 0 0.4em 0;
 }
-.album1 h3 {
+.album1 h2 {
     text-align: center;
     font-size: 2em;
     background:linear-gradient(55deg, rgb(32 40 47) -6%, rgb(31 110 178) 38%, rgb(22 21 27 / 52%) 94%);
     color: ghostwhite; 
     border-radius: 10px; 
 }
-.album1 h3:hover{
+.album1 h2:hover{
     background: rgb(23 25 27);
     transition: background-color 0.07s ease-out;
 }
@@ -22,13 +22,14 @@
 }
 .spotify-container iframe {
 height: 24rem;
+margin-bottom:1rem;
 }
 @media (max-width:768px) {
     .album1 p{
         font-size: .8rem;
         line-height: 1.8;
         }
-        .album1 h3{
+        .album1 h2{
             font-size: 1.2rem;
         }
 }
