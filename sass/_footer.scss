@@ -3,12 +3,13 @@
     color: #ffff;
     font-family: sans-serif;
     padding: 5px 0px 10px 15px;
+    h3 {
+        font-size: 1.25rem;
+        padding-top:.8em;
+    }
 }
 
-#footer h3 {
-    font-size: 1.25rem;
-    padding-top:.8em;
-}
+
 @media (max-width:768px) {
     #footer h3 {
         font-size: 14px;

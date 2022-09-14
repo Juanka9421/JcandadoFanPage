@@ -3,12 +3,14 @@ header {
     background: url(../imagenes/GreenDay4.jpg);
     height: 140px;
     border: black 2px solid;
+    ul  {
+        li{
+        font-size: 1.3rem;
+        list-style-type: none;
+        margin-top: 40px;}
+    }
 }
-ul li {
-    font-size: 1.3rem;
-    list-style-type: none;
-    margin-top: 40px;
-}
+
 .fondonav {
    background-color: none;
 }
@@ -55,11 +57,14 @@ ul li {
   @media (max-width:768px) {
     header {
         height: 100px;
+        ul{
+        li {
+            font-size: 1rem;
+            margin-top: 30px;
+        }
+      } 
     }
-    ul li {
-        font-size: 1rem;
-        margin-top: 30px;
-    }
+    
     .navbar-dark .navbar-nav .nav-link.active{
         color: #ddddddd6;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
